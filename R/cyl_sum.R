@@ -2,12 +2,13 @@
 #'
 #' @return A df summarizing mtcars by cyl
 #' @export
-#'
+#' @importFrom magrittr %>%
+#' @importFrom rlang .data
 #' @examples
 cyl_sum <- function() {
     mtcars %>%
-        dplyr::group_by(cyl) %>%
+        dplyr::group_by(.data$cyl) %>%  # see readme about `.data`
         dplyr::summarise(n = dplyr::n(),
-                         mpg = mean(mpg))
+                         mpg = mean(.data$mpg))
 
 }
