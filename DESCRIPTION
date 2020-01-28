@@ -1,0 +1,12 @@
+Package: tidyverseInPackagesTest
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Nayef",
+           family = "Ahmad",
+           role = c("aut", "cre"),
+           email = "nayef.ahmad.11@gmail.com")
+Description: What the package does (one paragraph).
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
