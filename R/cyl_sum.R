@@ -11,6 +11,6 @@ cyl_sum <- function(x) {
     mtcars %>%
         dplyr::group_by(.data$cyl) %>%  # see readme about `.data`
         dplyr::summarise(n = dplyr::n(),
-                         avg = mean({{x}}))
+                         avg = mean({{ x }}))
 
 }

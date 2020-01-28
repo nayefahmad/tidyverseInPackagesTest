@@ -13,6 +13,6 @@
 #' @examples
 hexbin <- function(df, x, y, bins = 10) {
     {{df}} %>%
-        ggplot2::ggplot(ggplot2::aes({{x}}, {{y}})) +
+        ggplot2::ggplot(ggplot2::aes({{ x }}, {{ y }})) +  # Hadley: spaces are good in the double curly
         ggplot2::geom_hex(bins = bins)
 }
