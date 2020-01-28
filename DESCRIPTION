@@ -13,5 +13,7 @@ LazyData: true
 Imports: 
     magrittr,
     dplyr,
-    ggplot2
+    ggplot2,
+    rlang,
+    hexbin
 RoxygenNote: 7.0.2
