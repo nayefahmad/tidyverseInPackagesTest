@@ -33,7 +33,9 @@ library(tidyverseInPackagesTest)
 
 * If you refer to a data var inside your function, you have to preface it with `.data` from the rlang package. 
 
-* To properly document the use of fns from other packages (e.g. %>% ), prob best to **both** use `usethis::use_package` **and** use `@importFrom magrittr %>% ` in the roxygen documentation of the specific function. 
+* To properly document the use of fns from other packages (e.g. %>% ), prob best to **both** use `usethis::use_package()` **and** use `@importFrom magrittr %>% ` in the roxygen documentation of the specific function. 
+    * Hadley: `@importFrom` changes the NAMESPACE - affects **all** functions in the package. I prefer not to put it in individual functions, but to create a separate file, using `usethis::use_package_doc()`
+    * NAMESPACE is about functions; DOCUMENTATION is about packages 
 
 
 ### Indirection
