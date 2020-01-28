@@ -4,7 +4,10 @@
 \alias{cyl_sum}
 \title{Make a specific summary table (demo)}
 \usage{
-cyl_sum()
+cyl_sum(x)
+}
+\arguments{
+\item{x}{The var in mtcars that we want average of}
 }
 \value{
 A df summarizing mtcars by cyl

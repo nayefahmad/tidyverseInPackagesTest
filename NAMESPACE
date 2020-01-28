@@ -3,5 +3,6 @@
 export(cyl_plot)
 export(cyl_sum)
 export(diamonds_summary2)
+export(hexbin)
 importFrom(magrittr,"%>%")
 importFrom(rlang,.data)

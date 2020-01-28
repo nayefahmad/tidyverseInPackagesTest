@@ -34,3 +34,26 @@ library(tidyverseInPackagesTest)
 * If you refer to a data var inside your function, you have to preface it with `.data` from the rlang package. 
 
 * To properly document the use of fns from other packages (e.g. %>% ), prob best to **both** use `usethis::use_package` **and** use `@importFrom magrittr %>% ` in the roxygen documentation of the specific function. 
+
+
+### Indirection
+
+See tidy evaluation. Two methods of fixing: 
+
+#### 1. Using square brackets 
+
+**not recommended:**  
+
+`cyl_plot <- function(var){
+    ggplot2::ggplot(mtcars) +
+        ggplot2::geom_bar(ggplot2::aes(.data[[var]])) + 
+        ggplot2::coord_flip()}`
+
+
+#### 2. Using "embracing"
+
+This is basically the latest way of doing quoting/unquoting. 
+
+
+
+
