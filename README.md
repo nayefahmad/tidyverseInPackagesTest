@@ -4,14 +4,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of tidyverseInPackagesTest is to ...
+The goal of tidyverseInPackagesTest is to demo the use of tidyverse functions in the development of new packages. 
 
 ## Installation
 
-You can install the released version of tidyverseInPackagesTest from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of tidyverseInPackagesTest from GitHub with:
 
 ``` r
-install.packages("tidyverseInPackagesTest")
+devtools::install_github("tidyverseInPackagesTest")
 ```
 
 ## Example
