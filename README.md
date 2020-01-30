@@ -6,6 +6,8 @@
 
 The goal of tidyverseInPackagesTest is to demo the use of tidyverse functions in the development of new packages. 
 
+This is an example as part of the "Building tidy tools" workshop at rstudio::conf 2020
+
 ## Installation
 
 You can install the released version of tidyverseInPackagesTest from GitHub with:
